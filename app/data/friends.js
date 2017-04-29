@@ -1,0 +1,51 @@
+var friendArray = [{
+  "name":"Ahmed",
+  "photo":"https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/6/005/064/1bd/3435aa3.jpg",
+  "scores":[
+      5,
+      1,
+      4,
+      4,
+      5,
+      1,
+      2,
+      5,
+      4,
+      1
+    ],
+    "sumScores":32
+},{
+  "name":"Mark",
+  "photo":"http://blogs.timesofindia.indiatimes.com/wp-content/uploads/2015/12/mark-zuckerberg.jpg",
+  "scores":[
+      5,
+      3,
+      3,
+      2,
+      3,
+      2,
+      4,
+      2,
+      4,
+      3
+    ],
+    "sumScores":31
+},{
+  "name":"Mr.Robot",
+  "photo":"http://fanfest.com/wp-content/uploads/2016/09/Mr.-Robot-Seaon-Finale.jpg",
+  "scores":[
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "sumScores":10
+}];
+
+module.exports = friendArray;

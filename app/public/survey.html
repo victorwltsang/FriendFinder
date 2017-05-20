@@ -188,9 +188,18 @@
         var userData = {
           name: $("#name").val(),
           photo: $("#photo").val(),
-          scores: [$("#q1").val(), $("#q2").val(), $("#q3").val(), $("#q4").val(), $("#q5").val(), $("#q6").val(), $("#q7").val(), $("#q8").val(), $("#q9").val(), $("#q10").val()]
+          scores: []
+          // scores: [$("#q1").val(), $("#q2").val(), $("#q3").val(), $("#q4").val(), $("#q5").val(), $("#q6").val(), $("#q7").val(), $("#q8").val(), $("#q9").val(), $("#q10").val()]
         };
+
+        // using a loop would be a more programmatic way to generate the scores array
+        for (var i = 1; i < 11; i++) {
+          userData.scores.push( $('#q' + i).val() )
+        }
+        // this would be useful in cases where you have considerably more questions to add to the array
+
         console.log(userData);
+        // you don't actually need to grab this since ajax calls will use the origin by default
         var currentURL = window.location.origin;
 
         $.post(currentURL + "/api/friends", userData, function(data)

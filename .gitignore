@@ -1,0 +1,3 @@
+# don't wanna commit your dependency fiels to git
+node_modules
+npm-debug.log

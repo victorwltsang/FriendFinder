@@ -13,6 +13,7 @@ module.exports = function(app) {
     // this is a result of setting `extended` to `true` in the body parser url encoded options object
     var userScore = req.body.scores;
 
+    // stoked you found a place to use reduce in this assignment! Just wanted to make sure you're aware that it optionally takes a second argument that serves as the initial value to operate on.
     var sumUserScore = userScore.reduce(function(a, b) {
       return parseInt(a) + parseInt(b);
     });
